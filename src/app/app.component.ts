@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { NotificationService } from './shared/services';
-import { MatSnackBar } from '@angular/material';
+import { MatSnackBar } from '@angular/material/snack-bar';
 
 @Component({
     selector: 'app-root',
@@ -9,8 +9,8 @@ import { MatSnackBar } from '@angular/material';
 })
 export class AppComponent implements OnInit {
     examples = [
-        {path: '/examples/01-observable-example', name: 'Observable'},
-        {path: '/examples/02-operators-example', name: 'Operators'}
+        {path: '/examples/ngact01-example', name: 'Angular'},
+        {path: '/examples/ngact02-example', name: 'Markdown'}
     ];
 
     constructor(private snackbar: MatSnackBar, private ns: NotificationService) {

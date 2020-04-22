@@ -2,18 +2,18 @@ import { Component } from '@angular/core';
 import { LoadingService } from '../../../shared/services';
 
 @Component({
-    selector: 'app-operator-markdown',
+    selector: 'app-ngact02-markdown',
     template: `
-    <markdown [src]="'./assets/md/operators.md'"(load)="onLoad($event)" (error)="onError($event)"></markdown>
+    <markdown [src]="'./assets/md/ngact02.md'"(load)="onLoad($event)" (error)="onError($event)"></markdown>
     `
 })
 
-export class OperatorMarkdownComponent {
+export class MarkdownArticleComponent {
 
     constructor(public loadingService: LoadingService) {}
     
     public onLoad($event) {
-        console.log('Observable-Markdown 02:  onLoad')
+        console.log('Angular-Angular 02:  onLoad')
         
         setTimeout(() => {
             this.loadingService.showLoader();
@@ -21,6 +21,6 @@ export class OperatorMarkdownComponent {
     }
     
     public onError($event) {
-        console.log('Observable-Markdown 02: onError');
+        console.log('Angular-Angular 02: onError');
     }
 }

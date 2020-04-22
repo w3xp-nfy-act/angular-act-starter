@@ -2,19 +2,19 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { MarkdownModule } from 'ngx-markdown';
 
-import { OperatorComponent, OperatorMarkdownComponent } from '.';
+import { MarkdownComponent, MarkdownArticleComponent } from '.';
 import { SharedModule } from '../../shared/shared.module';
 
 @NgModule({
   declarations: [
-      OperatorComponent,
-      OperatorMarkdownComponent
+      MarkdownComponent,
+      MarkdownArticleComponent
   ],
   imports: [
       CommonModule,
       SharedModule,
       MarkdownModule.forChild()
   ],
-  exports: [OperatorComponent, OperatorMarkdownComponent]
+  exports: [MarkdownComponent, MarkdownArticleComponent]
 })
 export class OperatorModule { }

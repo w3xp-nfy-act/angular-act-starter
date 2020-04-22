@@ -2,21 +2,21 @@ import { Routes, RouterModule } from '@angular/router';
 import { ModuleWithProviders } from '@angular/core';
 
 import {
-  ObservableComponent
-} from './examples/01-observable-example'
+  AngularComponent
+} from './examples/ngact01-example'
 
 import {
-  OperatorComponent,
-} from './examples/02-operators-example';
+  MarkdownComponent,
+} from './examples/ngact02-example';
 
 const appRoutes: Routes = [
   {
     path: '',
-    redirectTo: 'examples/01-observable-example',
+    redirectTo: 'examples/ngact01-example',
     pathMatch: 'full'
   },
-  {path: 'examples/01-observable-example', component: ObservableComponent},
-  {path: 'examples/02-operators-example', component: OperatorComponent},
+  {path: 'examples/ngact01-example', component: AngularComponent},
+  {path: 'examples/ngact02-example', component: MarkdownComponent},
 ];
 
 export const appRoutingProviders: any[] = [];
